@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0mPackaging /home/edureka/Deepak/SBT_Program/kafkaDirectWC/target/scala-2.10/kafkaspark_2.10-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	KafkaWordCount$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/edureka/Deepak/SBT_Program/kafkaDirectWC/target/scala-2.10/classes/KafkaWordCount$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	KafkaWordCount$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/edureka/Deepak/SBT_Program/kafkaDirectWC/target/scala-2.10/classes/KafkaWordCount$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	KafkaWordCount$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	  /home/edureka/Deepak/SBT_Program/kafkaDirectWC/target/scala-2.10/classes/KafkaWordCount$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	KafkaWordCount$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/edureka/Deepak/SBT_Program/kafkaDirectWC/target/scala-2.10/classes/KafkaWordCount$.class[0m
+[0m[[0mdebug[0m] [0m	KafkaWordCount$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  /home/edureka/Deepak/SBT_Program/kafkaDirectWC/target/scala-2.10/classes/KafkaWordCount$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	KafkaWordCount.class[0m
+[0m[[0mdebug[0m] [0m	  /home/edureka/Deepak/SBT_Program/kafkaDirectWC/target/scala-2.10/classes/KafkaWordCount.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
