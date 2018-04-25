@@ -1,0 +1,68 @@
+import org.apache.spark.SparkConf
+import org.apache.spark.streaming._
+import org.apache.spark.streaming.twitter._
+import org.apache.spark.SparkContext._
+import org.apache.spark._
+import org.apache.spark.rdd._
+import org.apache.spark.rdd.RDD
+import org.apache.spark.sql
+import org.apache.spark.streaming.Seconds
+import org.apache.spark.streaming.StreamingContext
+import org.apache.spark.streaming.StreamingContext._
+
+import org.apache.spark.storage.StorageLevel
+import scala.io.Source
+import scala.collection.mutable.HashMap
+import java.io.File
+
+import org.apache.spark.Logging
+
+import org.apache.log4j.{Level, Logger}
+
+object SentimentalAnalysis extends Logging{
+
+	def main(args : Array[String]) = {
+	
+	println("This is spark streaming program for Twitter analysis")
+	
+	if( args.length < 4){
+	  System.err.println("Usage: TwitterPopularTags <consumer key> <consumer secret> " +
+        "<access token> <access token secret> [<filters>]")
+        System.exit(1);
+	}
+
+	val log4jInitialized = Logger.getRootLogger.getAllAppenders.hasMoreElements
+    	if (!log4jInitialized) {
+      	// We first log something to initialize Spark's default logging, then we override the
+      	// logging level.
+      		logInfo("Setting log level to [WARN] for streaming example." +
+        	" To override add a custom log4j.properties to the classpath.")
+      		Logger.getRootLogger.setLevel(Level.WARN)
+    	}
+	
+	val Array(consumerKey,consumerSeceret,accessToken,accessTokenSeceret) = args.take(4)
+	val filter = args.takeRight(args.length - 4)
+	
+	System.setProperty("twitter4j.oauth.consumerKey", consumerKey)
+	System.setProperty("twitter4j.oauth.consumerSeceret", consumerSeceret)
+	System.setProperty("twitter4j.oauth.accessToken", accessToken)
+	System.setProperty("twitter4j.oauth.accessTokenSeceret", accessTokenSeceret)
+	
+	
+	val sparkConf = new SparkConf().setAppName("Twitter Analysis").setMaster("local[2]")
+	val ssc = new StreamingContext(sparkConf,Seconds(10))
+	
+	val streams = TwitterUtils.createStream(ssc,None,filter)
+	val tags = streams.flatMap(x => x.getHashtagEntities.map(x => x.getText))
+	
+	tags.print()
+	
+	ssc.start()
+	ssc.awaitTermination()
+	
+	//tags.saveAsTextFiles("")
+	
+	
+	}
+	
+}

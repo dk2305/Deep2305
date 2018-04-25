@@ -1,0 +1,19 @@
+[edureka@localhost twitterAnalysis]$ sbt package
+[info] Loading global plugins from /home/edureka/.sbt/0.13/plugins
+[info] Loading project definition from /home/edureka/Deepak/SBT_Program/twitterAnalysis/project
+[info] Set current project to TwitterPopularTags (in build file:/home/edureka/Deepak/SBT_Program/twitterAnalysis/)
+[info] Compiling 1 Scala source to /home/edureka/Deepak/SBT_Program/twitterAnalysis/target/scala-2.11/classes...
+[error] /home/edureka/Deepak/SBT_Program/twitterAnalysis/src/main/scala/SentimentAnalysis.scala:18: object Logging is not a member of package org.apache.spark
+[error] import org.apache.spark.Logging
+[error]        ^
+[error] /home/edureka/Deepak/SBT_Program/twitterAnalysis/src/main/scala/SentimentAnalysis.scala:22: not found: type Logging
+[error] object SentimentalAnalysis extends Logging{
+[error]                                    ^
+[error] /home/edureka/Deepak/SBT_Program/twitterAnalysis/src/main/scala/SentimentAnalysis.scala:38: not found: value logInfo
+[error]       		logInfo("Setting log level to [WARN] for streaming example." +
+[error]       		^
+[error] three errors found
+[error] (compile:compileIncremental) Compilation failed
+[error] Total time: 14 s, completed Apr 13, 2018 7:01:33 PM
+[edureka@localhost twitterAnalysis]$ 
+
