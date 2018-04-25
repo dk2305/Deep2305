@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Apr 06 23:26:52 IST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0162-9c1a-9969-000008f4a200 
+on database directory /home/edureka/Deepak/SBT_Program/networdWordCount/src/main/scala/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@7d0cd23c 
+Loaded from file:/usr/lib/spark-2.1.1-bin-hadoop2.7/jars/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_144-b01
+user.dir=/home/edureka/Deepak/SBT_Program/networdWordCount/src/main/scala
+os.name=Linux
+os.arch=amd64
+os.version=3.10.0-514.26.2.el7.x86_64
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
