@@ -14,13 +14,10 @@
 
 org.apache.hadoop.fs.LocalFileSystem
 org.apache.hadoop.fs.viewfs.ViewFileSystem
-org.apache.hadoop.fs.s3.S3FileSystem
-org.apache.hadoop.fs.s3native.NativeS3FileSystem
 org.apache.hadoop.fs.ftp.FTPFileSystem
 org.apache.hadoop.fs.HarFileSystem
 org.apache.hadoop.hdfs.DistributedFileSystem
-org.apache.hadoop.hdfs.HftpFileSystem
-org.apache.hadoop.hdfs.HsftpFileSystem
+org.apache.hadoop.hdfs.web.HftpFileSystem
+org.apache.hadoop.hdfs.web.HsftpFileSystem
 org.apache.hadoop.hdfs.web.WebHdfsFileSystem
-tachyon.hadoop.TFS
-tachyon.hadoop.TFSFT
+org.apache.hadoop.hdfs.web.SWebHdfsFileSystem

@@ -9,6 +9,8 @@ object kafkaWordCount{
 
 	def main(args : Array[String]){
 
+	StreamingExample.setStreamingLevels() 
+
 	val Array(zkQuorum, group, topics, numThreads)=args
 	val sparkConf = new SparkConf().setAppName("Integration with kafka").setMaster("local[*]")
 	val ssc = new StreamingContext(sparkConf,Seconds(10))

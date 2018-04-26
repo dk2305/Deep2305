@@ -1,9 +1,9 @@
 name := "Kafka Integration"
 version := "1.0"
 scalaVersion := "2.11.4"
-libraryDependencies +=	"org.apache.spark" %% "spark-core" % "1.5.2"
-libraryDependencies +=	"org.apache.spark" %% "spark-streaming" % "1.5.2"
-libraryDependencies +=	"org.apache.spark" %% "spark-streaming-kafka" % "1.5.2"
+libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.2.1"
+libraryDependencies += "org.apache.spark" % "spark-streaming_2.11" % "2.2.1"
+libraryDependencies += "org.apache.spark" % "spark-streaming-kafka-0-8-assembly_2.11" % "2.2.1"
 
 mergeStrategy in assembly := {
   case m if m.toLowerCase.endsWith("manifest.mf")          => MergeStrategy.discard

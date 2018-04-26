@@ -1,1 +1,1 @@
-com.sun.jersey.server.impl.provider.RuntimeDelegateImpl
+org.glassfish.jersey.server.internal.RuntimeDelegateImpl

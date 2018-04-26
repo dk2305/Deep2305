@@ -4,7 +4,7 @@
 		module="kafka-integration_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20180425180454"
+		publication="20180426082927"
 	>
 		<description>
 		Kafka Integration
@@ -34,8 +34,8 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.4" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
-		<dependency org="org.apache.spark" name="spark-core_2.11" rev="1.5.2" conf="compile->default(compile)"/>
-		<dependency org="org.apache.spark" name="spark-streaming_2.11" rev="1.5.2" conf="compile->default(compile)"/>
-		<dependency org="org.apache.spark" name="spark-streaming-kafka_2.11" rev="1.5.2" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-core_2.11" rev="2.2.1" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-streaming_2.11" rev="2.2.1" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-streaming-kafka-0-8-assembly_2.11" rev="2.2.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
